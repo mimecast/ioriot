@@ -1,7 +1,7 @@
 *.ko
 *.o
-docs/html/
-docs/latex/
+doc/html/
+doc/latex/
 ioriot/ioriot
 ioriot/tags
 systemtap/downloads/

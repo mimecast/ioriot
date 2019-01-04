@@ -2,7 +2,9 @@
 
 ## Overview
 
-I/O Riot is an I/O benchmarking tool for Linux based operating systems which captures I/O operations on a (possibly production) server in order to replay the exact same I/O operations on a load test machine.
+<img src=doc/ioriot_small.png align=right />
+
+...is an I/O benchmarking tool for Linux based operating systems which captures I/O operations on a (possibly production) server in order to replay the exact same I/O operations on a load test machine.
 
 I/O Riot is operated in 5 steps:
 
@@ -49,11 +51,11 @@ Future work will also include file hole support and I/O support for memory mappe
 
 # How to install I/O Riot
 
-I/O Riot depends on SystemTap and a compatible version of the Linux Kernel. To get started have a read through the [installation guide](docs/markdown/installation.md).
+I/O Riot depends on SystemTap and a compatible version of the Linux Kernel. To get started have a read through the [installation guide](doc/markdown/installation.md).
 
 # How to use I/O Riot
 
-Check out the [I/O Riot usage guide](docs/markdown/usage.md) for a full usage workflow demonstration.
+Check out the [I/O Riot usage guide](doc/markdown/usage.md) for a full usage workflow demonstration.
 
 # Appendix
 
@@ -122,4 +124,18 @@ exit_group - To detect process termination (closing all open file handles)
 
 ## Source code documentation
 
-The documentation of the source code can be generated via the Doxygen Framework. To install doxygen run ``sudo yum install doxygen`` and to generate the documentation run ``make doxygen`` in the top level source directory.  Once done, the resulting documentation can be found in the ``docs/html`` subfolder of the project. It is worthwhile to start from ``ioriot/src/main.c`` and read your way through. Functions are generally documented in the header files. Exceptions are static functions which don't have any separate declarations.
+The documentation of the source code can be generated via the Doxygen Framework. To install doxygen run ``sudo yum install doxygen`` and to generate the documentation run ``make doxygen`` in the top level source directory.  Once done, the resulting documentation can be found in the ``doc/html`` subfolder of the project. It is worthwhile to start from ``ioriot/src/main.c`` and read your way through. Functions are generally documented in the header files. Exceptions are static functions which don't have any separate declarations.
+
+More
+====
+
+* [How to contribute](CONTRIBUTING.md)
+* [Code of conduct](CODE_OF_CONDUCT.md)
+* [License](LICENSE)
+
+Credits
+=======
+
+* I/O Riot was created by **Paul Buetow** *<pbuetow@mimecast.com>*
+
+* Thank you to **Vlad-Marian Marian** for creating the I/O Riot logo.
